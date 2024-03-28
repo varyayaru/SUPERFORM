@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "IBM";
+    src: url("../IBM_Plex_Mono/IBMPlexMono-Light.ttf");
+  }
+
+* {
+    background-color: #4520ab;
+    font-family: IBM;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+input {
+    display: block;
+    height: 30px;
+}
+
+input:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn:active {
+    transform: scale(0.99);
+}
+
+.btn {
+    background: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    
+} 
+
+.add {
+    outline: 2px solid rgb(177, 153, 0);
+    margin-bottom: 10px;
+}
+
+.clear {
+    outline: 2px solid red;
+    width: 50vw;
+}
+
+.mainUsers,
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.users,
+.user {
+    width: 40vw;
+}
+
+.user {
+    background-color: #f5f1f1;
+    margin-bottom: 10px;
+}
+
+.user-outer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delete,
+.change {
+    transition: 1s;
+    border: none;
+    height: 40%;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.delete:hover {
+    transform: scale(1.1); 
+   }
+.change:hover {
+        transform: scale(1.1); 
+       }
+
+.delete {
+    background: red;
+}
+
+.change {
+    background: rgb(177, 153, 0);
+}
+
+.delete:active,
+.change:active {
+    transform: scale(0.95);
+}
